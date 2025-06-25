@@ -19,7 +19,7 @@ export const App = () => {
 
   return (
     <div className="section">
-      <h1 className="title">Selected tab is Tab {activeTabId.at(-1)}</h1>
+      <h1 className="title">Selected tab is Tab {activeTabId.split('-').at(-1)}</h1>
 
       <div data-cy="TabsComponent">
         <Tabs
